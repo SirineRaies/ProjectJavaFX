@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectjavafx.Controllers.HomePageController">
+   <children>
+      <ImageView fitHeight="422.0" fitWidth="375.0" layoutX="425.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/pet-shop.png" />
+         </image></ImageView>
+      <Text layoutX="48.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue dans ">
+         <font>
+            <Font name="Castellar" size="39.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="notre boutique" wrappingWidth="406.43017578125">
+         <font>
+            <Font name="Castellar" size="39.0" />
+         </font>
+      </Text>
+      <Text layoutX="47.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PET FRIENDS est une boutique spécialisée dans la vente de produits pour animaux. Elle prend en charge les commandes et propose régulièrement des offres intéressantes." wrappingWidth="343.0859375">
+         <font>
+            <Font name="Cambria Math" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="74.0" fitWidth="75.0" layoutX="54.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/animal-shelter (1).png" />
+         </image></ImageView>
+      <Text layoutX="167.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ET FRIEND">
+         <font>
+            <Font name="Jokerman" size="20.0" />
+         </font>
+      </Text>
+      <Pane id="button_login" layoutX="41.0" layoutY="466.0" onMouseClicked="#Go_To_Login" prefHeight="44.0" prefWidth="172.0" style="-fx-background-color: black; -fx-background-radius: 150 150 150 150;">
+         <children>
+            <Text fill="WHITE" layoutX="29.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Se connecter">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="129.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/right.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow radius="16.595" width="47.38" />
+         </effect>
+      </Pane>
+      <Pane id="button_signup" layoutX="228.0" layoutY="466.0" onMouseClicked="#Go_To_Signup" prefHeight="44.0" prefWidth="172.0" style="-fx-background-color: white; -fx-background-radius: 150 150 150 150;">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="39.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/Sign.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="66.0" layoutY="28.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S'inscrire">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="38.59" radius="35.6475" width="106.0">
+               <color>
+                  <Color red="0.3552631437778473" green="0.3552631437778473" blue="0.3552631437778473" />
+               </color>
+            </DropShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Pane>
+      <Text fill="#cd8b28" layoutX="153.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+         <font>
+            <Font name="Jokerman" size="20.0" />
+         </font>
+      </Text>
+      <Text fill="#cd8b28" layoutX="272.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+         <font>
+            <Font name="Jokerman" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -11,15 +11,9 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class MyConnection {
-    private String url = "jdbc:mysql://localhost:3306/projetintegration";
+    private String url = "jdbc:mysql://localhost:3306/projectjavafx";
     private String login = "root";
     private String pwd = "";
     public static MyConnection instance;

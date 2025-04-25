@@ -15,7 +15,7 @@ module org.example.projectjavafx {
     requires org.apache.pdfbox;
     requires java.desktop;
 
-    opens com.example.projectjavafx.Models to javafx.base;
+    opens org.example.projectjavafx.Models to javafx.base;
     opens org.example.projectjavafx to javafx.fxml;
     exports org.example.projectjavafx;
     exports org.example.projectjavafx.Controllers;

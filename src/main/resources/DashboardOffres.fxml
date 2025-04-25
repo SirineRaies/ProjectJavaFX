@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projectjavafx.Controllers.DashboardOffresController">
+   <children>
+      <VBox layoutX="14.0" layoutY="197.0" prefHeight="370.0" prefWidth="306.0" style="-fx-border-color: #bcb6b6;">
+         <children>
+            <HBox prefHeight="42.0" prefWidth="304.0">
+               <children>
+                  <Label fx:id="tr_id" text="ID ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="50.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="tf_id">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="61.0" prefWidth="304.0">
+               <children>
+                  <Label fx:id="tr_rate" prefHeight="17.0" prefWidth="71.0" text="Produit_ID">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="tf_prodID">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="25.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="46.0" prefWidth="304.0">
+               <children>
+                  <Label fx:id="tr_comment" text="Offre">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="30.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="tf_offre">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="45.0" top="15.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="304.0">
+               <children>
+                  <HBox prefHeight="61.0" prefWidth="304.0">
+                     <children>
+                        <Label fx:id="tr_user" prefHeight="17.0" prefWidth="63.0" text="Contenu">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="30.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tf_contenu" prefHeight="30.0" prefWidth="178.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="27.0" top="15.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="61.0" prefWidth="304.0">
+               <children>
+                  <HBox prefHeight="61.0" prefWidth="304.0">
+                     <children>
+                        <Button fx:id="btn_delete" mnemonicParsing="false" prefHeight="9.0" prefWidth="5.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Delete.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="170.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="btn_update" mnemonicParsing="false" prefHeight="3.0" prefWidth="0.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Modifier.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btn_insert" mnemonicParsing="false" prefHeight="13.0" prefWidth="3.0" style="-fx-background-color: white;">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Images/Add.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="table_offres" layoutX="330.0" layoutY="197.0" prefHeight="370.0" prefWidth="465.0" style="-fx-background-color: #E8E8E8;">
+         <columns>
+            <TableColumn fx:id="col_id" style="-fx-background-color: #E8E8E8; -fx-border-color: transparent transparent #d7d3d3 transparent; -fx-padding: 10 10 10 10;" text="ID" />
+            <TableColumn fx:id="col_prodID" minWidth="0.0" prefWidth="90.0" style="-fx-border-color: transparent transparent #d7d3d3 transparent; -fx-background-color: #E8E8E8; -fx-padding: 10 10 10 10;" text="Produit_ID" />
+            <TableColumn fx:id="col_offre" minWidth="0.0" prefWidth="150.0" style="-fx-border-color: transparent transparent #d7d3d3 transparent; -fx-background-color: #E8E8E8; -fx-padding: 10 10 10 10;" text="Offre" />
+            <TableColumn fx:id="col_contenu" prefWidth="250.0" style="-fx-border-color: transparent transparent #d7d3d3 transparent; -fx-background-color: #E8E8E8; -fx-padding: 10 10 10 10;" text="Contenu" />
+         </columns>
+      </TableView>
+      <AnchorPane layoutY="-1.0" prefHeight="104.0" prefWidth="800.0" style="-fx-border-color: grey grey grey grey;">
+         <children>
+            <ImageView fitHeight="74.0" fitWidth="75.0" layoutX="31.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/animal-shelter (1).png" />
+               </image>
+            </ImageView>
+            <Text layoutX="145.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ET FRIEND">
+               <font>
+                  <Font name="Jokerman" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#cd8b28" layoutX="131.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="P">
+               <font>
+                  <Font name="Jokerman" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#cd8b28" layoutX="250.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S">
+               <font>
+                  <Font name="Jokerman" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_userspage" layoutX="363.0" layoutY="41.0" mnemonicParsing="false" onAction="#go_toUser" style="-fx-background-color: white; -fx-font-weight: bold;" text="Admins" textFill="#0a0a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_Produit" layoutX="452.0" layoutY="41.0" mnemonicParsing="false" onAction="#go_to_Produits" style="-fx-background-color: white; -fx-font-weight: bold;" text="Produits" textFill="#1e1e1e">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_Offres" layoutX="532.0" layoutY="41.0" mnemonicParsing="false" onAction="#go_to_Offres" style="-fx-background-color: white; -fx-font-weight: bold;" text="Offres" textFill="#d78e11">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_Commandes" layoutX="591.0" layoutY="41.0" mnemonicParsing="false" onAction="#go_to_Commandes" style="-fx-background-color: white; -fx-font-weight: bold;" text="Commandes" textFill="#0a0a0a">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_ratings" layoutX="691.0" layoutY="41.0" mnemonicParsing="false" onAction="#go_to_Ratings" style="-fx-background-color: white; -fx-font-weight: bold;" text="Ratings">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
